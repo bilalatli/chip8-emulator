@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "incremental": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@app/*": [
+        "./*"
+      ]
+    },
+    "include": [
+      "./src/**/*.d.ts",
+      "./src/**/*.ts"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "rules": {
+    "no-implicit-dependencies": [
+      true,
+      [
+        "@app"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "chip8-emulator",
+  "version": "1.0.0",
+  "author": {
+    "url": "https://github.com/bilalatli",
+    "email": "ytbilalatli@gmail.com",
+    "name": "Bilal ATLI"
+  },
+  "description": "Chip8 emulator written in typescript",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "4.0.3"
+  }
+}
