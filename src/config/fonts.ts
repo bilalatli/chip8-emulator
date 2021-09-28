@@ -18,3 +18,5 @@ const Fonts = {
         0xF0, 0x80, 0xF0, 0x80, 0x80  // F
     ]
 };
+
+export default Fonts;
