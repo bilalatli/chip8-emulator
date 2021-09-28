@@ -1,4 +1,4 @@
-import {DeviceConstants} from "@app/constants/device-constants";
+import {DeviceConstants} from "@app/config/device-constants";
 
 export class Memory {
     private memory: Uint8Array;
