@@ -1,8 +1,10 @@
+import {DeviceConstants} from "@app/constants/device-constants";
+
 export class Memory {
     private memory: Uint8Array;
 
     constructor() {
-        this.memory = new Uint8Array(4096);
+        this.reset();
     }
 
     public get(memoryAddress: number): number {
@@ -14,6 +16,6 @@ export class Memory {
     }
 
     public reset() {
-        this.memory = new Uint8Array(4096);
+        this.memory = new Uint8Array(DeviceConstants.MEMORY_SIZE);
     }
 }
