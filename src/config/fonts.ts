@@ -19,4 +19,8 @@ const Fonts = {
     ]
 };
 
-export default Fonts;
+enum FontSets {
+    DEFAULT = 'DEFAULT'
+}
+
+export {FontSets, Fonts};
