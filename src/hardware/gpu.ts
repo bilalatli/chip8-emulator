@@ -30,7 +30,8 @@ export class Gpu {
     }
 
     /**
-     * Set pixel
+     * Flip pixel
+     *
      * @param x
      * @param y
      */
