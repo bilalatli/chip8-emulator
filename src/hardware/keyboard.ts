@@ -39,7 +39,7 @@ export class Keyboard {
      * @param keyCode
      */
     public onNextKeyPress(keyCode: number) {
-
+        // 0xFX0A = Vx = get_key() : Pause all cpu until next key press
     }
 
     /**
