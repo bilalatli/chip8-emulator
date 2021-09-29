@@ -89,7 +89,7 @@ export class Keyboard {
      * Set event listeners for browser events
      */
     private setEventListeners() {
-        window.addEventListener("keydown", this.keyDown, false);
-        window.addEventListener("keyup", this.keyUp, false);
+        window.addEventListener("keydown", this.keyDown.bind(this), false);
+        window.addEventListener("keyup", this.keyUp.bind(this), false);
     }
 }

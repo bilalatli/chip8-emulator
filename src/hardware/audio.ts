@@ -50,6 +50,17 @@ export class Audio {
     }
 
     /**
+     * Stop & delete oscillator
+     */
+    public stop() {
+        if (this.oscillator) {
+            this.oscillator.stop();
+            this.oscillator.disconnect();
+            this.oscillator = null;
+        }
+    }
+
+    /**
      * Set audio waveform
      * @param audioWaveForm
      */
