@@ -8,16 +8,15 @@
     "outDir": "./dist",
     "incremental": true,
     "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
     "paths": {
-      "@app/*": [
-        "./*"
-      ]
-    },
-    "include": [
-      "./src/**/*.d.ts",
-      "./src/**/*.ts"
-    ]
+    }
   },
+  "include": [
+    "./src/**/*.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.js"
+  ],
   "exclude": [
     "node_modules",
     "dist"
@@ -26,7 +25,6 @@
     "no-implicit-dependencies": [
       true,
       [
-        "@app"
       ]
     ]
   }

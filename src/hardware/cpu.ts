@@ -1,7 +1,5 @@
-import {Memory} from "@app/hardware/memory";
-import {DeviceConstants} from "@app/config/device-constants";
-import {Fonts, FontSets} from "@app/config/fonts";
-import {IHardwares} from "@app/interfaces/hardwares-insterface";
+import {IHardwares} from "../interfaces/hardwares.interface";
+import {Fonts, FontSets} from "../config/fonts";
 
 export class Cpu {
     /**
@@ -125,7 +123,7 @@ export class Cpu {
     /**
      * Main CPU cycle
      */
-    private run() {
+    public run() {
         for (let i = 0; i < this.clockRate; i++) {
             if (!this.isPaused) {
                 let opcode = this.fetch();

@@ -1,7 +1,7 @@
-import {Keyboard} from "@app/hardware/keyboard";
-import {Gpu} from "@app/hardware/gpu";
-import {Audio} from "@app/hardware/audio";
-import {Memory} from "@app/hardware/memory";
+import {Keyboard} from "../hardware/keyboard";
+import {Gpu} from "../hardware/gpu";
+import {Audio} from "../hardware/audio";
+import {Memory} from "../hardware/memory";
 
 export interface IHardwares {
     keyboard: Keyboard,

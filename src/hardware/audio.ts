@@ -1,7 +1,7 @@
 /**
  * Definition webkitAudioContext for typescript
  */
-import {AudioWaveForms} from "@app/config/audio-wave-forms";
+import {AudioWaveForms} from "../config/audio-wave-forms";
 
 declare global {
     interface Window {

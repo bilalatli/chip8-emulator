@@ -1,5 +1,5 @@
-import {Memory} from "@app/hardware/memory";
-import {WebConstants} from "@app/config/web-constants";
+import {Memory} from "./memory";
+import {WebConstants} from "../config/web-constants";
 
 export class Gpu {
     private readonly rows: number;
