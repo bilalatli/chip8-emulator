@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chip8 Emulator</title>
+
+    <style type="text/css">
+        canvas {
+            border: 2px solid #eaeaea;
+        }
+    </style>
+</head>
+<body>
+<script>let exports = {};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+<div class="game-screen">
+    <div class="screen-header">
+        <select id="rom"></select>
+    </div>
+    <div class="canvas-container">
+        <canvas id="screen"></canvas>
+    </div>
+</div>
+
+<script type="module" src="emu.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        alert('Page loaded');
+        console.log(window.emulator);
+    });
+</script>
+
+</body>
+</html>
